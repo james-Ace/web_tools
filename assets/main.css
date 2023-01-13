@@ -1,0 +1,54 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* 过渡动画：样式名为page，需与~/nuxt.config.ts中过渡名称一致 */
+
+.page-enter-active,
+.page-leave-active {
+
+  transition: all 0.2s;
+
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+/* 过渡动画：样式名为rotate，需与页面的definePageMeta中过渡名称一致 */
+
+.rotate-enter-active,
+.rotate-leave-active {
+  transition: all 0.2s;
+}
+
+.rotate-enter-from,
+.rotate-leave-to {
+  opacity: 0;
+  transform: rotate3d(1, 1, 1, 15deg);
+}
+
+.toHeader {
+  height: 40px;
+  background: rgb(60, 60, 60);
+}
+
+.toHeader h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 40px;
+  margin: 0;
+}
+
+.link {
+  display: block;
+  padding: 40px 20px;
+  text-decoration: none;
+  color:rgb(121, 121, 121);
+  text-align: center;
+}
